@@ -145,8 +145,8 @@ namespace LSystem
         private ScriptOptions GetOptions()
         {
             return ScriptOptions.Default
-                .AddImports(nameof(System), nameof(LSystem), nameof(UnityEngine))
-                .AddReferences(typeof(UniversalRule).Assembly, typeof(UnityEngine.GameObject).Assembly);
+                .AddImports(nameof(System), nameof(LSystem))//, nameof(UnityEngine))
+                .AddReferences(typeof(UniversalRule).Assembly);//, typeof(UnityEngine.GameObject).Assembly);
         }
 
 

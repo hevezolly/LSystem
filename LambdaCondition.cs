@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LSystem
 {
-    class LambdaCondition : ICondition
+    public class LambdaCondition : ICondition
     {
         private Func<RuleExecutionContext, bool> lambda;
 

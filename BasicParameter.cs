@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LSystem
 {
-    class BasicParameter<T> : IParameter<T>
+    public class BasicParameter<T> : IParameter<T>
     {
         private string id;
 

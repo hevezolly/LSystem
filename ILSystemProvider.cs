@@ -4,12 +4,12 @@ using System.Text;
 
 namespace LSystem
 {
-    interface ILSystemProvider
+    public interface ILSystemProvider
     {
         ILSystem Compile();
     }
 
-    interface ILSystemProvider<ModuleType>: ILSystemProvider
+    public interface ILSystemProvider<ModuleType>: ILSystemProvider
         where ModuleType : IModule
     {
         new ILSystem<ModuleType> Compile();

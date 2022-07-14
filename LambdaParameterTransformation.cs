@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LSystem
 {
-    class LambdaParameterTransformation : IParameterTransformation
+    public class LambdaParameterTransformation : IParameterTransformation
     {
         private IEnumerable<Action<RuleExecutionContext>> transformations;
 

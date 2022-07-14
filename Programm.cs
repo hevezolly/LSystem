@@ -9,7 +9,7 @@ namespace LSystem
     {
         public static void Main(string[] args)
         {
-            var lSys = new XmlLSystemProvider().Load("D:\\Components\\LSML\\test.xml").Compile();
+            var lSys = new XmlLSystemProvider().Load("D:\\UnityProjects\\TreeGenerator.v3\\Assets\\LSystems\\test\\testLSystem.xml").Compile();
             lSys.Init();
             Display(lSys.CurrentState);
             for (var i = 0; i < 5; i++)

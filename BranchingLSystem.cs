@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace LSystem
 {
-    class BranchingLSystem<ModuleType, RuleType>: ContextFilteringLSystem<ModuleType, RuleType>
+    public class BranchingLSystem<ModuleType, RuleType>: ContextFilteringLSystem<ModuleType, RuleType>
         where ModuleType : class, IModule
         where RuleType : class, IRule
     {

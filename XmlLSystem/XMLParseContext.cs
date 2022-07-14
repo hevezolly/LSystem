@@ -32,8 +32,8 @@ namespace LSystem {
             if (options != null)
                 return options;
             return ScriptOptions.Default
-                .AddImports(nameof(System), nameof(LSystem), nameof(UnityEngine))
-                .AddReferences(typeof(UniversalRule).Assembly, typeof(UnityEngine.GameObject).Assembly);
+                .AddImports(nameof(System), nameof(LSystem))//, nameof(UnityEngine))
+                .AddReferences(typeof(UniversalRule).Assembly);//, typeof(UnityEngine.GameObject).Assembly);
         }
 
         public object GetExecutionParameters() => parameters;

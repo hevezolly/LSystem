@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace LSystem
 {
-    class ContextFilteringLSystem<ModuleType, RuleType> : BasicLSystem<ModuleType, RuleType>
+    public class ContextFilteringLSystem<ModuleType, RuleType> : BasicLSystem<ModuleType, RuleType>
         where ModuleType : class, IModule
         where RuleType : class, IRule
     {
