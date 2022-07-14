@@ -128,7 +128,7 @@ It can be accessed by following method
 ```C#
 public static void Main(string[] args)
 {
-    var lSys = new XmlLSystemProvider().Load("D:\\UnityProjects\\TreeGenerator.v3\\Assets\\LSystems\\test\\testLSystem.xml").Compile();
+    var lSys = new XmlLSystemProvider().Load("l-system.xml").Compile();
     lSys.Init();
     Display(lSys.CurrentState);
     for (var i = 0; i < 5; i++)
